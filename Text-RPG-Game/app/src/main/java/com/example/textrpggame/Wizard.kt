@@ -1,6 +1,6 @@
 package com.example.textrpggame
 
-class Wizard: Character {
+class Wizard : Character {
     var name: String
     var age: Int
     var gender: String

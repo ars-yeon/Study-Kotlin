@@ -1,6 +1,6 @@
 package com.example.textrpggame
 
-class Zombie: Monster {
+class Zombie : Monster {
     var name: String
     var color: String
     var height: Double
