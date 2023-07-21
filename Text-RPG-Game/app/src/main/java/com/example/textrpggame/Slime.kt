@@ -24,7 +24,7 @@ class Slime: Monster, GreenSlimeSkill {
         println("점프해서 내려찍기!")
     }
 
-    override fun posion() {
+    override fun poison() {
         if (color == "초록") {
             println("초록 독 퍼뜨리기!")
         } else {
