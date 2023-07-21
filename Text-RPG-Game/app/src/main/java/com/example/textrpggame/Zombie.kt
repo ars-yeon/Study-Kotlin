@@ -1,13 +1,13 @@
 package com.example.textrpggame
 
-class Zombie {
-    var name:String = ""
-    var color:String = ""
-    var height:Double = 0.0
-    var hp:Int = 0
-    var damage:Int = 0
+class Zombie: Monster {
+    var name: String = ""
+    var color: String = ""
+    var height: Double = 0.0
+    var hp: Int = 0
+    var damage: Int = 0
 
-    constructor(_name:String, _color:String, _height:Double, _hp:Int, _damage:Int) {
+    constructor(_name: String, _color: String, _height: Double, _hp: Int, _damage: Int) {
         println("${name}좀비 생성")
         name = _name
         color = _color
@@ -16,7 +16,7 @@ class Zombie {
         damage = _damage
     }
 
-    fun attack() {
+    override fun attack() {
         println("물어뜯기 공격!")
     }
 
