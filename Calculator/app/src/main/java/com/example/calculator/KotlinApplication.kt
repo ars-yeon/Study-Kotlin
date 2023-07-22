@@ -8,16 +8,39 @@ import com.example.calculator.calc.DivideOperation
 
 
 fun main() {
-    // 더하기
-    val addCalc = Calulator(AddOperation())
-    println("A + B = ${addCalc.operate(10, 20)}")
-    // 빼기
-    val subCalc = Calulator(SubstractOperation())
-    println("A - B = ${subCalc.operate(10, 20)}")
-    // 곱하기
-    val mulCalc = Calulator(MultiplyOperation())
-    println("A * B = ${mulCalc.operate(10, 20)}")
-    // 나누기
-    val divCalc = Calulator(DivideOperation())
-    println("A / B = ${divCalc.operate(10, 20)}")
+    print("Enter num1: ")
+    val num1 = readLine()!!.toInt()
+
+    print("Enter num2: ")
+    val num2 = readLine()!!.toInt()
+
+    while (true) {
+        print("Enter Operator: ")
+        val oper = readLine()!! // '+', '-', '*', '/'
+
+        val result = when (oper) {
+            "+" -> { // 더하기
+                val addCalc = Calulator(AddOperation())
+                addCalc.operate(num1, num2)
+            }
+            "-" -> {// 빼기
+                val subCalc = Calulator(SubstractOperation())
+                subCalc.operate(num1, num2)
+            }
+            "*" -> { // 곱하기
+                val mulCalc = Calulator(MultiplyOperation())
+                mulCalc.operate(num1, num2)
+            }
+            "/" -> { // 나누기
+                val divCalc = Calulator(DivideOperation())
+                divCalc.operate(num1, num2)
+            }
+            else -> { // 다른 연산자를 입력했을 때
+                println("※ Invalid operator. Please try again.")
+                continue
+            }
+        }
+        println("$num1 $oper $num2 = $result")
+        break
+    }
 }
