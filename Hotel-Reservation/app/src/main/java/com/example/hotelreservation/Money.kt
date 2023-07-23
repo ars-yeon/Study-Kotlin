@@ -10,7 +10,7 @@ class Money(val amount: Int) {
 
     // 숫자를 돈 형식으로 변환하는 함수
     fun money(): String {
-        val numberFormat = NumberFormat.getNumberInstance(Locale.KOREAN)
-        return numberFormat.format(amount)
+        val numFormat = NumberFormat.getNumberInstance(Locale.KOREAN)  // 한국에 맞는 숫자 형식
+        return numFormat.format(amount)
     }
 }
