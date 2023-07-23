@@ -20,7 +20,7 @@ class Reservation {
         }
 
         while (true) {
-            println("체크인 날짜를 입력해주세요. (YYYYMMDD)")
+            println("체크인 날짜를 입력해주세요.(YYYYMMDD) [오늘 날짜: $today]")
             checkIn = readLine()!!
 
             // 선택한 날짜가 지났으면 예외 처리
