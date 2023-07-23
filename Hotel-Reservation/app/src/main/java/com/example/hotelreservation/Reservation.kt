@@ -5,10 +5,11 @@ class Reservation {
     var room: String = ""
     var checkIn: String = ""
     var checkOut: String = ""
+    var reservations: MutableList<ReservationInfo> = mutableListOf()
 
     fun reserve() {
         println("예약자분의 성함을 입력해주세요.")
-        var name = readLine()!!
+        val name = readLine()!!
 
         while (true) {
             println("예약할 방 번호를 입력해주세요. (100~999)")
@@ -35,5 +36,9 @@ class Reservation {
             if (checkOut.toInt() <= checkIn.toInt()) println("체크인 날 당일 또는 지난 날짜는 예약이 불가능합니다.")
             else break
         }
+
+        // 입력 받은 정보를 ReservationInfo 객체로 만들어서 리스트에 추가
+        val reservationInfo = ReservationInfo(name, room, checkIn, checkOut)
+        reservations.add(reservationInfo)
     }
 }
