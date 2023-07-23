@@ -12,9 +12,8 @@ class Check {
         for ((index, reservationInfo) in reservations.withIndex()) {
             val formattedCheckIn = Date.formatDate((reservationInfo.checkIn))
             val formattedCheckOut = Date.formatDate((reservationInfo.checkOut))
-            val list = "${index + 1}. 예약자: ${reservationInfo.name}, 방 번호: ${reservationInfo.room}호, 체크인: ${formattedCheckIn}, 체크아웃: ${formattedCheckOut}"
+            val list = "${index + 1}) 예약자: ${reservationInfo.name}, 방 번호: ${reservationInfo.room}호, 체크인: ${formattedCheckIn}, 체크아웃: ${formattedCheckOut}"
             println(list)
         }
     }
-
 }
