@@ -9,8 +9,8 @@ class Reservation {
     var checkOut: String = ""
     var reservations: MutableList<ReservationInfo> = mutableListOf()
 
-    val random = Random()
-    fun rand(from: Int, to: Int): Int {
+    private val random = Random()
+    private fun rand(from: Int, to: Int): Int {
         return random.nextInt(to - from) + from
     }
 
@@ -44,13 +44,12 @@ class Reservation {
             else break
         }
 
-        val pay = rand(50000, 600000).toString()  // 호텔 숙소비 500000~600000 랜덤으로 임의의 금액
-        val deposit = (pay.toInt() * 0.1).toString()  // 예약금: 호텔 숙박비의 10%
+        val pay = Money(rand(50000, 600000))  // 호텔 숙소비 500000~600000 랜덤으로 임의의 금액
+        val deposit = Money((pay.amount * 0.1).toInt())  // 예약금: 호텔 숙박비의 10%
 
-        // 입력 받은 정보를 ReservationInfo 객체로 만들어서 리스트에 추가
-        val reservationInfo = ReservationInfo(name, room, checkIn, checkOut, pay, deposit)
-        reservations.add(reservationInfo)
+        val reservationInfo = ReservationInfo(name, room, checkIn, checkOut, pay, deposit)  // 입력 받은 정보를 ReservationInfo 객체로 만들어서 리스트에 추가
+        reservations.add(reservationInfo)  // 리스트에 예약 정보 추가
 
-        println("호텔 숙박비 ${pay}원의 10%인 예약금 ${deposit}원을 입금해주세요!")
+        println("호텔 숙박비 ${pay.money()}원의 10%인 예약금 ${deposit.money()}원을 입금해주세요!")  // money() 함수를 호출하여 돈 형식으로 출력
     }
 }
