@@ -1,3 +1,3 @@
 package com.example.hotelreservation
 
-data class ReservationInfo(val name: String, val room: String, val checkIn: String, val checkOut: String, var pay: String, var deposit: String)
+data class ReservationInfo(val name: String, val room: String, val checkIn: String, val checkOut: String, var pay: Money, var deposit: Money)
