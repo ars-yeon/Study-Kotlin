@@ -1,0 +1,6 @@
+com.example.hotelreservation.test.app-core-1.5.0-0 C:\Users\zosel\.gradle\caches\transforms-3\b32c7386a2aef6715cb5bd71e2ff357e\transformed\core-1.5.0\res
+com.example.hotelreservation.test.app-annotation-experimental-1.3.0-1 C:\Users\zosel\.gradle\caches\transforms-3\c5ec658faf2b98f812e539eacbdac157\transformed\annotation-experimental-1.3.0\res
+com.example.hotelreservation.test.app-androidTest-2 C:\Users\zosel\AndroidStudioProjects\Study-Kotlin\Hotel-Reservation\app\build\generated\res\resValues\androidTest\debug
+com.example.hotelreservation.test.app-mergeDebugAndroidTestResources-3 C:\Users\zosel\AndroidStudioProjects\Study-Kotlin\Hotel-Reservation\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.hotelreservation.test.app-mergeDebugAndroidTestResources-4 C:\Users\zosel\AndroidStudioProjects\Study-Kotlin\Hotel-Reservation\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.hotelreservation.test.app-merged_res-5 C:\Users\zosel\AndroidStudioProjects\Study-Kotlin\Hotel-Reservation\app\build\intermediates\merged_res\debugAndroidTest

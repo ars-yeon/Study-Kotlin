@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="42493613-37a2-434e-a325-048bbfebd10f" name="Changes" comment="[Fix]: 🔧️&#10;- 체크인, 체크아웃을 String에서 LocalDate로 형 변환">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\zosel\.android\avd\Pixel_5_API_30.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2SvpN0emO7lSJSPpyFVflnV8KWi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "C:/Users/zosel/AndroidStudioProjects/Calculator",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="RunManager" selected="Kotlin.MainKt">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="Hotel_Reservation.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.hotelreservation.MainKt" />
+      <module name="Hotel_Reservation.app.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42493613-37a2-434e-a325-048bbfebd10f" name="Changes" comment="" />
+      <created>1690036864268</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690036864268</updated>
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1690037155163</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690037155163</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[FEAT]: ⚙️&#10;- 기본적인 출력 내용&#10;- 숫자 입력에 따른 when문 실행">
+      <created>1690038432149</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690038432149</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[FEAT]: ⚙️&#10;- Reservation 기본 틀&#10;- 예약자 이름, 예약할 방번호, 체크인/아웃 날짜 입력">
+      <created>1690039111198</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690039111198</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update">
+      <created>1690087225274</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690087225274</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[Feat]: ⚙️&#10;- 예약자 이름 입력&#10;- 예약할 방 번호 입력&#10;- 체크인 날짜 입력, 예외 처리&#10;- 체크아웃 날짜 입력, 예외 처리">
+      <created>1690087530322</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690087530322</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[Feat]: ⚙️&#10;입력 받은 정보를 ReservationInfo 객체로 만들어서 리스트에 추가">
+      <created>1690091226602</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690091226602</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[Feat]: ⚙️&#10;- 예약 정보를 나타내는 데이터(name, room, checkIn, checkOut)를 저장하는 기능 구현">
+      <created>1690091816975</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690091816975</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[Feat]: ⚙️&#10;- 예약자 목록을 출력하는 기능 구현&#10;- 번호. 예약자, 방번호, 체크인, 체크아웃 순으로 출력">
+      <created>1690096892134</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690096892134</updated>
+    </task>
+    <task id="LOCAL-00009" summary="[Feat]: ⚙️&#10;- 날짜를 YYYY-MM-DD 형식으로 변환하는 함수&#10;- 출력문 약간 수정">
+      <created>1690099810845</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1690099810845</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[FIX] : 🔧&#10;체크인날짜 입력할 때 오늘날짜 보여주기">
+      <created>1690100772322</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1690100772322</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[Feat]: ⚙️&#10;- `try-catch`로 숫자 이외의 값 예외 처리&#10;- Check 클래스 연동">
+      <created>1690100899892</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1690100899892</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[Feat]: ⚙️&#10;- 날짜를 YYYY-MM-DD 형식으로 변환하는 함수를 객체화">
+      <created>1690102142692</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1690102142692</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[Feat]: ⚙️&#10;- 날짜를 YYYY-MM-DD 형식으로 변환하는 함수를 제거">
+      <created>1690102164673</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1690102164673</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[FIX] : 🔧&#10;띄어쓰기 수정">
+      <created>1690102341696</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1690102341696</updated>
+    </task>
+    <task id="LOCAL-00015" summary="[FIX] : 🔧&#10;.을 )로 수정">
+      <created>1690103684702</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1690103684702</updated>
+    </task>
+    <task id="LOCAL-00016" summary="[FIX] : 🔧&#10;- 메뉴 목록, 입력을 while문 안으로 이동&#10;- 정렬된 예약 목록 출력을 위한 val sort = CheckSort와 sort.checkSort(rez.reservations) 추가">
+      <created>1690103816684</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1690103816684</updated>
+    </task>
+    <task id="LOCAL-00017" summary="[FEAT]: ⚙️&#10;- 예약 목록을 체크인 날짜 기준으로 정렬하는 클래스 구현">
+      <created>1690103899868</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1690103899868</updated>
+    </task>
+    <task id="LOCAL-00018" summary="[FEAT]: ⚙️&#10;- 숙박비, 예약금 추가">
+      <created>1690116521005</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1690116521005</updated>
+    </task>
+    <task id="LOCAL-00019" summary="[FEAT]: ⚙️&#10;- 숫자를 돈 형식으로 반환하는 기능 구현">
+      <created>1690119919242</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1690119919242</updated>
+    </task>
+    <task id="LOCAL-00020" summary="[Fix]: 🔧&#10;- 변수명 numberFormat에서 numFormat으로 변경&#10;- 주석 추가">
+      <created>1690120031260</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1690120031260</updated>
+    </task>
+    <task id="LOCAL-00021" summary="[FEAT]: ⚙️&#10;- random, rand()함수를 private로 변경&#10;- Money함수를 사용해서 변수 pay, deposit을 구현&#10;- 주석추가">
+      <created>1690120807387</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1690120807387</updated>
+    </task>
+    <task id="LOCAL-00022" summary="[FEAT]: ⚙️&#10;- pay, deposit을 String에서 Money로 바꿈">
+      <created>1690120856470</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1690120856470</updated>
+    </task>
+    <task id="LOCAL-00023" summary="[FEAT]: ⚙️&#10;- menu라는 변수명을 없애고 when문의 조건에 입력을 바로 받게 만듦&#10;- 페이지 나누기를 코드 끝에 위치&#10;- 시스템 종료 중복으로 when문의 7 삭제">
+      <created>1690121663357</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1690121663357</updated>
+    </task>
+    <task id="LOCAL-00024" summary="[Delete]: 🗑️️&#10;날짜 형식 관련 클래스를 찾아서 필요가 없어져서 삭제">
+      <created>1690124649559</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1690124649559</updated>
+    </task>
+    <task id="LOCAL-00025" summary="[FEAT]: ⚙️&#10;- 오늘 날짜를 서버 날짜(실시간)로 변경&#10;- 체크인, 체크아웃 날짜 형식 변환">
+      <created>1690125801990</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1690125801990</updated>
+    </task>
+    <task id="LOCAL-00026" summary="[Fix]: 🔧️&#10;- 체크인, 체크아웃을 String에서 LocalDate로 형 변환">
+      <created>1690125850068</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1690125850068</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[FEAT]: ⚙️&#10;- 기본적인 출력 내용&#10;- 숫자 입력에 따른 when문 실행" />
+    <MESSAGE value="[FEAT]: ⚙️&#10;- Reservation 기본 틀&#10;- 예약자 이름, 예약할 방번호, 체크인/아웃 날짜 입력" />
+    <MESSAGE value="update" />
+    <MESSAGE value="[Feat]: ⚙️&#10;- 예약자 이름 입력&#10;- 예약할 방 번호 입력&#10;- 체크인 날짜 입력, 예외 처리&#10;- 체크아웃 날짜 입력, 예외 처리" />
+    <MESSAGE value="[Feat]: ⚙️&#10;입력 받은 정보를 ReservationInfo 객체로 만들어서 리스트에 추가" />
+    <MESSAGE value="[Feat]: ⚙️&#10;- 예약 정보를 나타내는 데이터(name, room, checkIn, checkOut)를 저장하는 기능 구현" />
+    <MESSAGE value="[Feat]: ⚙️&#10;- 예약자 목록을 출력하는 기능 구현&#10;- 번호. 예약자, 방번호, 체크인, 체크아웃 순으로 출력" />
+    <MESSAGE value="[Feat]: ⚙️&#10;- 날짜를 YYYY-MM-DD 형식으로 변환하는 함수&#10;- 출력문 약간 수정" />
+    <MESSAGE value="[FIX] : &#10;체크인날짜 입력할 때 오늘날짜 보여주기" />
+    <MESSAGE value="[Feat]: ⚙️&#10;- `try-catch`로 숫자 이외의 값 예외 처리&#10;- Check 클래스 연동" />
+    <MESSAGE value="[Feat]: ⚙️&#10;- 날짜를 YYYY-MM-DD 형식으로 변환하는 함수를 객체화" />
+    <MESSAGE value="[Feat]: ⚙️&#10;- 날짜를 YYYY-MM-DD 형식으로 변환하는 함수를 제거" />
+    <MESSAGE value="[FIX] : &#10;띄어쓰기 수정" />
+    <MESSAGE value="[FIX] : &#10;.을 )로 수정" />
+    <MESSAGE value="[FIX] : &#10;- 메뉴 목록, 입력을 while문 안으로 이동&#10;- 정렬된 예약 목록 출력을 위한 val sort = CheckSort와 sort.checkSort(rez.reservations) 추가" />
+    <MESSAGE value="[FEAT]: ⚙️&#10;- 예약 목록을 체크인 날짜 기준으로 정렬하는 클래스 구현" />
+    <MESSAGE value="[FEAT]: ⚙️&#10;- 숙박비, 예약금 추가" />
+    <MESSAGE value="[FEAT]: ⚙️&#10;- 숫자를 돈 형식으로 반환하는 기능 구현" />
+    <MESSAGE value="[Fix]: &#10;- 변수명 numberFormat에서 numFormat으로 변경&#10;- 주석 추가" />
+    <MESSAGE value="[FEAT]: ⚙️&#10;- random, rand()함수를 private로 변경&#10;- Money함수를 사용해서 변수 pay, deposit을 구현&#10;- 주석추가" />
+    <MESSAGE value="[FEAT]: ⚙️&#10;- pay, deposit을 String에서 Money로 바꿈" />
+    <MESSAGE value="[FEAT]: ⚙️&#10;- menu라는 변수명을 없애고 when문의 조건에 입력을 바로 받게 만듦&#10;- 페이지 나누기를 코드 끝에 위치&#10;- 시스템 종료 중복으로 when문의 7 삭제" />
+    <MESSAGE value="[Delete]: ️️&#10;날짜 형식 관련 클래스를 찾아서 필요가 없어져서 삭제" />
+    <MESSAGE value="[FEAT]: ⚙️&#10;- 오늘 날짜를 서버 날짜(실시간)로 변경&#10;- 체크인, 체크아웃 날짜 형식 변환" />
+    <MESSAGE value="[Fix]: ️&#10;- 체크인, 체크아웃을 String에서 LocalDate로 형 변환" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Fix]: ️&#10;- 체크인, 체크아웃을 String에서 LocalDate로 형 변환" />
+  </component>
+</project>
