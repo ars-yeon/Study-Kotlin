@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Introduce_Me</string>
+    <string name="id">ID</string>
+    <string name="enter_ur_id">Enter your ID</string>
+    <string name="pw">Password</string>
+    <string name="enter_ur_pw">Enter your Password</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="logo">Logo</string>
 </resources>
