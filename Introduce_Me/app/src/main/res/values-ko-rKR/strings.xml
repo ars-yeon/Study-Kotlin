@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Introduce_Me</string>
+    <string name="id">아이디</string>
+    <string name="log_in">로그인</string>
+    <string name="sign_up">가입하기</string>
+    <string name="pw">비밀번호</string>
+    <string name="enter_ur_pw">비밀번호를 입력해주세요.</string>
+    <string name="enter_ur_id">아이디를 입력해주세요.</string>
+    <string name="logo">로고</string>
+</resources>
