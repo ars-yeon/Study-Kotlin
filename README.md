@@ -1,13 +1,13 @@
 # Study-Kotlin
 
-1. Text RPG Game
+## 1. Text RPG Game
 
-2. Calculator
+## 2. Calculator
 
-3. Hotel Reservation
+## 3. Hotel Reservation
 
-4. Kiosk
+## 4. Kiosk
 
-5. Dice Roller
+## 5. Dice Roller
 
-6. Introduce Me
+## 6. Introduce Me
