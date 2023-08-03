@@ -11,4 +11,7 @@
     <string name="name">name</string>
     <string name="enter_ur_name">Enter your Name</string>
     <string name="title_img">title_img</string>
+    <string name="id_display_format">ID: %1$s</string>
+    <string name="my_name">Name: SoYeon Lee</string>
+    <string name="my_age">Age: 25</string>
 </resources>
