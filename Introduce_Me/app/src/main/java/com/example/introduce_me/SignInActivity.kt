@@ -23,9 +23,11 @@ class SignInActivity : AppCompatActivity() {
             val pw = edit_pw.text.toString()
 
             if (id.isNotEmpty() && pw.isNotEmpty()) {  // 아이디/비번 둘 다 채워져 있다면
+                val intent = Intent(this, HomeActivity::class.java)  // 자기소개 페이지로 이동하는 변수 Intent
+                intent.putExtra("datafromSignInActivity", id)
+                startActivity(intent)  // 자기소개 페이지로 이동
+
                 Toast.makeText(this, "로그인 성공",  Toast.LENGTH_SHORT).show()  // 토스트 메시지 띄우기
-                val intent = Intent(this, HomeActivity::class.java)  // 자기소개 페이지로 이동
-                startActivity(intent)
             } else { // 아이디/비번 중 하나라도 비어있다면
                 Toast.makeText(this, "아이디/비밀번호를 확인해주세요.",  Toast.LENGTH_SHORT).show()
             }
