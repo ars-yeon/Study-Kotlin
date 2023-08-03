@@ -14,4 +14,7 @@
     <string name="id_display_format">아이디: %1$s</string>
     <string name="my_name">이름: 이소연</string>
     <string name="my_age">나이: 25</string>
+    <string name="my_mbti">MBTI: ENFP</string>
+    <string name="interest">관심사: 농구🏀</string>
+    <string name="liked_team">좋아하는 팀: LG 세이커스</string>
 </resources>
