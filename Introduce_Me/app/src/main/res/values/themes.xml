@@ -1,9 +1,20 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.Introduce_Me" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- 상단 액션 바, 그 아래 상태바의 색상 설정 (라일락) -->
+        <item name="colorPrimary">#BBB1D6</item>
+        <item name="colorPrimaryDark">#BBB1D6</item>
     </style>
 
-    <style name="Theme.Introduce_Me" parent="Base.Theme.Introduce_Me" />
+    <!-- Theme.Introduce_Me -->
+    <style name="Theme.Introduce_Me" parent="Base.Theme.Introduce_Me">
+        <!-- 버튼 스타일 지정 -->
+        <item name="android:buttonStyle">@style/WhiteTextButton</item>
+    </style>
+
+    <!-- WhiteTextButton -->
+    <style name="WhiteTextButton" parent="Widget.AppCompat.Button">
+        <!-- 버튼 글씨 색상 설정 (흰색) -->
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
 </resources>
