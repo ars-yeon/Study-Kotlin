@@ -8,7 +8,7 @@
     tools:context=".SignInActivity">
 
     <ImageView
-        android:id="@+id/logo_sign_in"
+        android:id="@+id/img_sign_in"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:layout_marginTop="16dp"
@@ -17,7 +17,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_hug" />
+        app:srcCompat="@drawable/prankie0" />
 
     <TextView
         android:id="@+id/text_id"
@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_sign_in" />
+        app:layout_constraintTop_toBottomOf="@+id/img_sign_in" />
 
     <EditText
         android:id="@+id/edit_id"
