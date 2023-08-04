@@ -9,7 +9,8 @@ import android.widget.Button
 // 3. 자기소개 페이지
 class HomeActivity : AppCompatActivity() {
 
-    var images = listOf<Int>(  // 이미지 리스트
+    // 이미지 리소스 리스트
+    var images = listOf<Int>(
         R.drawable.prankie1,
         R.drawable.prankie2,
         R.drawable.prankie3,
@@ -21,17 +22,18 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        val image = findViewById<ImageView>(R.id.img_home)
-        val randomNum = (0..4).random()  // 0~5까지 숫자 중 랜덤
-        val strData = intent.getStringExtra("inputId")  // SignInActivity에서 전달받은 아이디
-        val extraId = findViewById<TextView>(R.id.extra_id)
-        val idDisplayFormat = getString(R.string.id_display_format, strData)
-        val btnClose = findViewById<Button>(R.id.btn_close)
+        val image = findViewById<ImageView>(R.id.img_home)  // ImageView 위젯 초기화
+        val randomNum = (0..4).random()  // 0~5까지 숫자 랜덤으로 선택
+        val strData = intent.getStringExtra("inputId")  // SignInActivity에서 전달된 데이터 가져오기
+        val extraId = findViewById<TextView>(R.id.extra_id)  // TextView 위젯 초기화
+        val idDisplayFormat = getString(R.string.id_display_format, strData) // 텍스트 포맷 설정
+        val btnClose = findViewById<Button>(R.id.btn_close)  // 닫기 버튼 초기화
 
-        image.setImageResource(images[randomNum])  // 랜덤 이미지 보여주기
+        image.setImageResource(images[randomNum])  // 랜덤하게 선택된 이미지를 ImageView에 설정
 
-        extraId.setText(idDisplayFormat)  // '아이디: 입력받은 데이터' 형식
+        extraId.text = idDisplayFormat  // 전달받은 아이디 데이터 TextView에 표시
 
+        // 닫기 버튼 클릭 시 Activity 종료
         btnClose.setOnClickListener {
             finish()  // 가입하기 페이지(SignInActivity)로 이동
         }
