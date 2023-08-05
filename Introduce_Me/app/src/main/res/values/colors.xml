@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="lilac">#BBB1D6</color>
+    <color name="vodka">#B2C1EB</color>
+    <color name="classic_rose">#FFC2EC</color>
+    <color name="btn_text_default">#FFFFFF</color>
+    <color name="btn_text_clicked">#FF0000</color>
 </resources>

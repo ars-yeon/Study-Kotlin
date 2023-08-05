@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Introduce_Me" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- 상단 액션 바, 그 아래 상태바의 색상 설정 (라일락) -->
-        <item name="colorPrimary">#BBB1D6</item>
-        <item name="colorPrimaryDark">#BBB1D6</item>
+        <item name="colorPrimary">@color/lilac</item>
+        <item name="colorPrimaryDark">@color/lilac</item>
     </style>
 
     <!-- Theme.Introduce_Me -->
@@ -15,6 +15,6 @@
     <!-- WhiteTextButton -->
     <style name="WhiteTextButton" parent="Widget.AppCompat.Button">
         <!-- 버튼 글씨 색상 설정 (흰색) -->
-        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 </resources>

@@ -18,4 +18,7 @@
     <string name="interest">Interest: Basketball🏀</string>
     <string name="liked_team">Liked Team: LG Sakers</string>
     <string name="close">Close</string>
+
+    <string name="btn_text_default">😘 Close</string>
+    <string name="btn_text_clicked">😭 Close</string>
 </resources>
