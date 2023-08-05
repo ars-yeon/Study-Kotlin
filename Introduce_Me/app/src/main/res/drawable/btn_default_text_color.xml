@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- 버튼 텍스트 색상 -->
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:color="@color/btn_text_default" android:state_enabled="true" />
-    <item android:color="@color/btn_text_clicked" />
-</selector>
