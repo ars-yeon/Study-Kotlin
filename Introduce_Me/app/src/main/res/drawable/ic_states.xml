@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  버튼을 눌렀을때 아이콘 -->
+    <item android:drawable="@drawable/black_heart" android:state_pressed="true" />
+    <!--  평소의 아이콘 -->
+    <item android:drawable="@drawable/blue_heart" />
+</selector>
