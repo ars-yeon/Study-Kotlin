@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.widget.addTextChangedListener
 
 // 1. 로그인 페이지
 class SignInActivity : AppCompatActivity() {
@@ -52,6 +53,18 @@ class SignInActivity : AppCompatActivity() {
                 }
             }
 
+        // 초기 버튼 상태 업데이트
+        updateButtonState()
+
+        // 입력 필드의 텍스트 변경 시 버튼 상태 업데이트
+        editId.addTextChangedListener {
+            updateButtonState()
+        }
+
+        editPw.addTextChangedListener {
+            updateButtonState()
+        }
+
         // 로그인 버튼이 눌렸을 때의 동작 정의
         btnSignIn.setOnClickListener {
             val id = editId.text.toString() // 입력한 ID를 가져옴
@@ -76,5 +89,13 @@ class SignInActivity : AppCompatActivity() {
             val intent = Intent(this, SignUpActivity::class.java)
             signInLauncher.launch(intent) // SignUpActivity를 실행하고 결과를 처리하는데 사용할 signInLauncher를 사용하여 호출
         }
+    }
+
+
+    // 아이디와 비밀번호 입력 상태를 확인하여 버튼 상태 변경하는 함수
+    private fun updateButtonState() {
+        val id = editId.text.toString()
+        val pw = editPw.text.toString()
+        btnSignIn.isEnabled = id.isNotEmpty() && pw.isNotEmpty()
     }
 }
