@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="50dp"
+    android:layout_margin="10dp"
     tools:context=".HomeActivity">
 
     <ImageView
@@ -22,6 +22,7 @@
         android:id="@+id/linear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,6 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+
             android:text="@string/my_mbti"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -99,12 +101,13 @@
         android:id="@+id/btn_close"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/btn_style"
         android:drawableStart="@drawable/ic_states"
         android:drawableEnd="@drawable/ic_states"
-        android:paddingHorizontal="40dp"
         android:gravity="center"
+        android:paddingHorizontal="40dp"
         android:text="@string/close"
         android:textColor="@drawable/btn_text_color"
         android:textSize="16sp"
