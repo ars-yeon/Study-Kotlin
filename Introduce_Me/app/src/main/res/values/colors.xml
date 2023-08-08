@@ -3,9 +3,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="lilac">#BBB1D6</color>
-    <color name="vodka">#B2C1EB</color>
-    <color name="classic_rose">#FFC2EC</color>
+    <color name="yellow">#F6AB00</color>
+    <color name="light_yellow">#FFD500</color>
+    <color name="red">#BD162F</color>
+    <color name="apricot">#FFB9A0</color>
 
     <color name="btn_text_default">#FFFFFF</color>
     <color name="btn_text_pressed">#FF000000</color>

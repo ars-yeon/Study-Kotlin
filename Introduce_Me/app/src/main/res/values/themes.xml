@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Introduce_Me" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- 상단 액션 바, 그 아래 상태바의 색상 설정 (라일락) -->
-        <item name="colorPrimary">@color/lilac</item>
-        <item name="colorPrimaryDark">@color/lilac</item>
+        <item name="colorPrimary">@color/light_yellow</item>
+        <item name="colorPrimaryDark">@color/light_yellow</item>
     </style>
 
     <!-- Theme.Introduce_Me -->

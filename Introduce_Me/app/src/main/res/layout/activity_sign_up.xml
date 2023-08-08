@@ -17,7 +17,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/prankie1" />
+        app:srcCompat="@drawable/cb4" />
 
     <TextView
         android:id="@+id/text_name"

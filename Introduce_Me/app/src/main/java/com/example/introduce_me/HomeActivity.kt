@@ -10,12 +10,12 @@ import android.widget.Button
 class HomeActivity : AppCompatActivity() {
 
     // 이미지 리소스 리스트
-    var images = listOf<Int>(
-        R.drawable.prankie1,
-        R.drawable.prankie2,
-        R.drawable.prankie3,
-        R.drawable.prankie4,
-        R.drawable.prankie5
+    private var images = listOf<Int>(
+        R.drawable.cb1,
+        R.drawable.cb2,
+        R.drawable.cb3,
+        R.drawable.cb4,
+        R.drawable.cb5
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

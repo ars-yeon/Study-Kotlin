@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  버튼을 눌렀을때 버튼의 색상과 모양 -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
-    <solid android:color="@color/classic_rose" />
+    <solid android:color="@color/yellow" />
     <corners android:radius="25dp" />
 </shape>
