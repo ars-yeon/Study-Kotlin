@@ -6,15 +6,10 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.activity.result.ActivityResult
-import androidx.activity.result.ActivityResultLauncher
-import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.widget.addTextChangedListener
 
 // 2. 회원가입 페이지
 class SignUpActivity : AppCompatActivity() {
-    // ActivityResultLauncher를 선언하여 startActivityForResult를 대체할 준비
-    private lateinit var signUpLauncher: ActivityResultLauncher<Intent>
-
     // UI 요소 연결할 변수 선언
     private lateinit var editName: EditText
     private lateinit var editId: EditText
@@ -31,45 +26,33 @@ class SignUpActivity : AppCompatActivity() {
         editPw = findViewById(R.id.edit_pw)
         btnSignUp = findViewById(R.id.btn_sign_up)
 
-        // registerForActivityResult 호출하여 signUpLauncher 초기화
-        signUpLauncher =
-            registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result: ActivityResult ->
-                // startActivityForResult 결과를 처리하는 람다식
-                if (result.resultCode == RESULT_OK) {
-                    val data = result.data
-                    if (data != null) {
-                        // 결과로 전달된 데이터에서 ID/PW를 가져옴
-                        val id = data.getStringExtra("inputId")
-                        val pw = data.getStringExtra("inputPw")
+        // 초기 버튼 상태 업데이트
+        updateButtonState()
 
-                        // ID/PW가 모두 비어있지 않은 경우
-                        if (!id.isNullOrEmpty() && !pw.isNullOrEmpty()) {
-                            // Intent ID/PW를 담음
-                            val intent = Intent()
-                            intent.putExtra("inputId", id)
-                            intent.putExtra("inputPw", pw)
+        // 입력 필드의 텍스트 변경 시 버튼 상태 업데이트
+        editName.addTextChangedListener {
+            updateButtonState()
+        }
 
-                            // 결과 설정, 현재 액티비티 종료
-                            setResult(RESULT_OK, intent)
-                            finish()
-                        }
-                    }
-                }
-            }
+        editId.addTextChangedListener {
+            updateButtonState()
+        }
+
+        editPw.addTextChangedListener {
+            updateButtonState()
+        }
 
         // 가입하기 버튼이 눌렸을 때 동작 정의
         btnSignUp.setOnClickListener {
             val name = editName.text.toString()
             val id = editId.text.toString()
             val pw = editPw.text.toString()
-
             // Name/ID/PW가 모두 채워져 있을 경우
             if (name.isNotEmpty() && id.isNotEmpty() && pw.isNotEmpty()) {  // 이름/아이디/비번 셋 다 채워져 있다면
                 // 결과로 전달할 데이터를 Intent에 담음
                 val intent = Intent()
                 intent.putExtra("inputId", id)
                 intent.putExtra("inputPw", pw)
-
                 // 결과를 설정, 현재 액티비티 종료
                 setResult(RESULT_OK, intent)
                 finish()  // SignInActivity 돌아가기
@@ -78,5 +61,13 @@ class SignUpActivity : AppCompatActivity() {
                 Toast.makeText(this, "입력되지 않은 정보가 있습니다.", Toast.LENGTH_SHORT).show()
             }
         }
+    }
+
+    // 이름, 아이디, 비밀번호 입력 상태를 확인하여 버튼 상태 변경하는 함수
+    private fun updateButtonState() {
+        val name = editName.text.toString()
+        val id = editId.text.toString()
+        val pw = editPw.text.toString()
+        btnSignUp.isEnabled = name.isNotEmpty() && id.isNotEmpty() && pw.isNotEmpty()
     }
 }
