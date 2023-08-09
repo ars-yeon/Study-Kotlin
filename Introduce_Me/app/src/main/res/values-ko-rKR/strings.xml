@@ -11,13 +11,19 @@
     <string name="name">이름</string>
     <string name="enter_ur_name">이름을 입력하세요.</string>
     <string name="title_img">타이틀 이미지</string>
-    <string name="id_display_format">아이디: %1$s</string>
-    <string name="my_name">이름: 이소연</string>
-    <string name="my_age">나이: 25</string>
-    <string name="my_mbti">MBTI: ENFP🌻</string>
-    <string name="interest">관심사: 농구🏀</string>
-    <string name="liked_team">좋아하는 팀: LG 세이커스</string>
+    <string name="id_display_format">%1$s</string>
+    <string name="my_name">이소연</string>
+    <string name="my_age">25</string>
+    <string name="my_mbti">ENFP🌻</string>
+    <string name="interest">농구🏀</string>
+    <string name="liked_team">LG 세이커스</string>
     <string name="close">닫기</string>
     <string name="btn_text_default">😘 닫기</string>
     <string name="btn_text_clicked">😭 닫기</string>
+    <string name="txt_id">아이디 :</string>
+    <string name="txt_name">이름 :</string>
+    <string name="txt_age">나이 :</string>
+    <string name="txt_mbti">MBTI :</string>
+    <string name="txt_Interest">관심사 :</string>
+    <string name="txt_liked_team">좋아하는 팀 :</string>
 </resources>
