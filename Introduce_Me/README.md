@@ -20,3 +20,5 @@ It consists of three activities.
 
 ![introduction1](https://github.com/ars-yeon/Study-Kotlin/assets/68272722/70060fa5-71f0-407c-956b-6ce598755a9a) | ![introduction2](https://github.com/ars-yeon/Study-Kotlin/assets/68272722/ac57ea88-6a4e-4c62-a4d5-a00f58b72191) | ![introduction3](https://github.com/ars-yeon/Study-Kotlin/assets/68272722/9f8ddcda-81b5-40f0-8f60-89f42b5d6488) | ![introduction4](https://github.com/ars-yeon/Study-Kotlin/assets/68272722/b07b9f41-7e9b-4065-94d2-d68d886774bf) | ![introduction5](https://github.com/ars-yeon/Study-Kotlin/assets/68272722/f432689a-c16f-483d-b491-686e2e74c80f)
 --- | --- | --- |--- | --- | 
+
+![click](https://github.com/ars-yeon/Study-Kotlin/assets/68272722/a9f3da68-a451-44d7-b85d-e7185ba55357)
