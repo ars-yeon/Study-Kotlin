@@ -1,15 +1,24 @@
 <resources>
     <string name="app_name">Introduce_Me</string>
+
     <string name="id">ID</string>
     <string name="enter_ur_id">Enter your ID</string>
     <string name="pw">Password</string>
     <string name="enter_ur_pw">Enter your Password</string>
+    <string name="name">name</string>
+    <string name="enter_ur_name">Enter your Name</string>
+
     <string name="sign_in">Sign In</string>
     <string name="sign_up">Sign Up</string>
     <string name="logo">Logo</string>
 
-    <string name="name">name</string>
-    <string name="enter_ur_name">Enter your Name</string>
+    <string name="txt_id">ID :</string>
+    <string name="txt_name">Name :</string>
+    <string name="txt_age">Age :</string>
+    <string name="txt_mbti">MBTI :</string>
+    <string name="txt_Interest">Interest :</string>
+    <string name="txt_liked_team">Liked Team :</string>
+
     <string name="title_img">title_img</string>
     <string name="id_display_format">%1$s</string>
     <string name="my_name">Soyeon Lee</string>
@@ -17,14 +26,8 @@
     <string name="my_mbti">ENFP🌻</string>
     <string name="interest">Basketball🏀</string>
     <string name="liked_team">LG Sakers</string>
-    <string name="close">Close</string>
 
+    <string name="close">Close</string>
     <string name="btn_text_default">😘 Close</string>
     <string name="btn_text_clicked">😭 Close</string>
-    <string name="txt_id">ID :</string>
-    <string name="txt_name">Name :</string>
-    <string name="txt_age">Age :</string>
-    <string name="txt_mbti">MBTI :</string>
-    <string name="txt_Interest">Interest :</string>
-    <string name="txt_liked_team">Liked Team :</string>
 </resources>
