@@ -3,6 +3,7 @@ package com.example.introduce_me
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MotionEvent
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -69,5 +70,11 @@ class SignUpActivity : AppCompatActivity() {
         val id = editId.text.toString()
         val pw = editPw.text.toString()
         btnSignUp.isEnabled = name.isNotEmpty() && id.isNotEmpty() && pw.isNotEmpty()
+    }
+
+    // EditText를 제외한 부분을 터치하면 키보드가 사라지도록 함
+    override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {
+        Utils.handleTouchEvent(this, ev, currentFocus)
+        return super.dispatchTouchEvent(ev)
     }
 }
