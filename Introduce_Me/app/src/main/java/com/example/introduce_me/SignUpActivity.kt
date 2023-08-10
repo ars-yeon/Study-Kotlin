@@ -7,7 +7,7 @@ import android.view.MotionEvent
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.core.widget.addTextChangedListener
+//import androidx.core.widget.addTextChangedListener
 
 // 2. 회원가입 페이지
 class SignUpActivity : AppCompatActivity() {
@@ -27,6 +27,7 @@ class SignUpActivity : AppCompatActivity() {
         editPw = findViewById(R.id.edit_pw)
         btnSignUp = findViewById(R.id.btn_sign_up)
 
+/*      필수 구현 항목인 Toast 메시지가 노출이 안되서 주석 처리
         // 초기 버튼 상태 업데이트
         updateButtonState()
 
@@ -41,7 +42,7 @@ class SignUpActivity : AppCompatActivity() {
 
         editPw.addTextChangedListener {
             updateButtonState()
-        }
+        }*/
 
         // 가입하기 버튼이 눌렸을 때 동작 정의
         btnSignUp.setOnClickListener {
@@ -64,17 +65,18 @@ class SignUpActivity : AppCompatActivity() {
         }
     }
 
+    // EditText를 제외한 부분을 터치하면 키보드가 사라지도록 함
+    override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {
+        Utils.handleTouchEvent(this, ev, currentFocus)
+        return super.dispatchTouchEvent(ev)
+    }
+
+/*  필수 구현 항목인 Toast 메시지가 노출이 안되서 주석 처리
     // 이름, 아이디, 비밀번호 입력 상태를 확인하여 버튼 상태 변경하는 함수
     private fun updateButtonState() {
         val name = editName.text.toString()
         val id = editId.text.toString()
         val pw = editPw.text.toString()
         btnSignUp.isEnabled = name.isNotEmpty() && id.isNotEmpty() && pw.isNotEmpty()
-    }
-
-    // EditText를 제외한 부분을 터치하면 키보드가 사라지도록 함
-    override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {
-        Utils.handleTouchEvent(this, ev, currentFocus)
-        return super.dispatchTouchEvent(ev)
-    }
+    }*/
 }

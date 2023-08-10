@@ -9,7 +9,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.core.widget.addTextChangedListener
+//import androidx.core.widget.addTextChangedListener
 
 // 1. 로그인 페이지
 class SignInActivity : AppCompatActivity() {
@@ -54,6 +54,7 @@ class SignInActivity : AppCompatActivity() {
                 }
             }
 
+/*      필수 구현 항목인 Toast 메시지가 노출이 안되서 주석 처리
         // 초기 버튼 상태 업데이트
         updateButtonState()
 
@@ -64,7 +65,7 @@ class SignInActivity : AppCompatActivity() {
 
         editPw.addTextChangedListener {
             updateButtonState()
-        }
+        }*/
 
         // 로그인 버튼이 눌렸을 때의 동작 정의
         btnSignIn.setOnClickListener {
@@ -92,17 +93,17 @@ class SignInActivity : AppCompatActivity() {
         }
     }
 
-
-    // 아이디와 비밀번호 입력 상태를 확인하여 버튼 상태 변경하는 함수
-    private fun updateButtonState() {
-        val id = editId.text.toString()
-        val pw = editPw.text.toString()
-        btnSignIn.isEnabled = id.isNotEmpty() && pw.isNotEmpty()
-    }
-
     // EditText를 제외한 부분을 터치하면 키보드가 사라지도록 함
     override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {
         Utils.handleTouchEvent(this, ev, currentFocus)
         return super.dispatchTouchEvent(ev)
     }
+
+/*  필수 구현 항목인 Toast 메시지가 노출이 안되서 주석 처리
+    // 아이디와 비밀번호 입력 상태를 확인하여 버튼 상태 변경하는 함수
+    private fun updateButtonState() {
+        val id = editId.text.toString()
+        val pw = editPw.text.toString()
+        btnSignIn.isEnabled = id.isNotEmpty() && pw.isNotEmpty()
+    }*/
 }
