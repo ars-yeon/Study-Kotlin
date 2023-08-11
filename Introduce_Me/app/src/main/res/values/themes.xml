@@ -1,11 +1,13 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Base.Theme.Introduce_Me" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Indroduce_Me의 대표 색상 설정 (노란색) -->
+    <style name="AppTheme" parent="Theme.Material3.DayNight">
+        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/light_yellow</item>
         <item name="colorPrimaryDark">@color/light_yellow</item>
-
-        <!-- 상태바 없애기 (전체화면)-->
+        <!-- No Title Bar-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- No Status Bar (Full Screen)-->
         <item name="android:windowFullscreen">true</item>
     </style>
 
