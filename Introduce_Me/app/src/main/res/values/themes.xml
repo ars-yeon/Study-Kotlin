@@ -4,6 +4,9 @@
         <!-- Indroduce_Me의 대표 색상 설정 (노란색) -->
         <item name="colorPrimary">@color/light_yellow</item>
         <item name="colorPrimaryDark">@color/light_yellow</item>
+
+        <!-- 상태바 없애기 (전체화면)-->
+        <item name="android:windowFullscreen">true</item>
     </style>
 
     <!-- Theme.Introduce_Me -->
