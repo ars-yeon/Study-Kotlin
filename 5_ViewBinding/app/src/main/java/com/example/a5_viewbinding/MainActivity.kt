@@ -2,19 +2,24 @@ package com.example.a5_viewbinding
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
+import com.example.a5_viewbinding.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        val btn = findViewById<Button>(R.id.myButton)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
 
-        btn.setOnClickListener {
-            val tv_name = findViewById<TextView>(R.id.myTextView)
-            tv_name.text = "버튼이 눌렸어요!!"
+        setContentView(view)
+
+        binding.myButton.setOnClickListener {
+            binding.myTextView.text = "The binding is working well!"
         }
+
+
     }
 }
