@@ -19,12 +19,12 @@ class MainActivity : AppCompatActivity() {
         val dataList = mutableListOf<MyItem>()
         dataList.add(MyItem(R.drawable.sample_0, "Bella", "1"))
         dataList.add(MyItem(R.drawable.sample_1, "Charlie", "2"))
-        dataList.add(MyItem(R.drawable.sample_2, "Daisy", "1.5"))
-        dataList.add(MyItem(R.drawable.sample_3, "Duke", "1"))
-        dataList.add(MyItem(R.drawable.sample_4, "Max", "2"))
-        dataList.add(MyItem(R.drawable.sample_5, "Happy", "4"))
-        dataList.add(MyItem(R.drawable.sample_6, "Luna", "3"))
-        dataList.add(MyItem(R.drawable.sample_7, "Bob", "2"))
+        dataList.add(MyItem(R.drawable.sample_2, "Daisy", "3"))
+        dataList.add(MyItem(R.drawable.sample_3, "Duke", "4"))
+        dataList.add(MyItem(R.drawable.sample_4, "Max", "5"))
+        dataList.add(MyItem(R.drawable.sample_5, "Happy", "6"))
+        dataList.add(MyItem(R.drawable.sample_6, "Luna", "7"))
+        dataList.add(MyItem(R.drawable.sample_7, "Bob", "8"))
         
         // 어댑터 생성 및 연결
         binding.listView.adapter = MyAdapter(this, dataList)
