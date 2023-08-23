@@ -38,12 +38,12 @@ class MyAdapter(val mContext: Context, val mItems: MutableList<MyItem>) : BaseAd
         // convertView 변수로 참조되는 항목 뷰 객체내에 포함된 객체를 id를 통해 얻어옴
         val iconImageView = convertView?.findViewById<View>(R.id.iconItem) as ImageView
         val tv_name = convertView.findViewById<View>(R.id.textItem1) as TextView
-        val tv_age = convertView.findViewById<View>(R.id.textItem2) as TextView
+        val tv_ep = convertView.findViewById<View>(R.id.textItem2) as TextView
 
         // 어댑터가 관리하는 항목 데이터 중에서 position 위치의 항목의 객체를 헤딩 힝목에 설정
         iconImageView.setImageResource(item.aIcon)
         tv_name.text = item.aName
-        tv_age.text = item.aAge
+        tv_ep.text = item.aEP
 
         return convertView
     }
