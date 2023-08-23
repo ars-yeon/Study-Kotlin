@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal">
@@ -25,21 +24,19 @@
             android:id="@+id/textItem1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/name"
+            android:hint="Name"
             android:padding="@dimen/list_item_padding"
             android:textColor="@color/black"
-            android:textSize="@dimen/list_item_text_size1"
-            tools:ignore="SpUsage" />
+            android:textSize="@dimen/list_item_text_size1" />
 
         <TextView
             android:id="@+id/textItem2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/age"
+            android:hint="EP"
             android:padding="@dimen/list_item_padding"
             android:textColor="@color/gray"
-            android:textSize="@dimen/list_item_text_size2"
-            tools:ignore="SpUsage" />
+            android:textSize="@dimen/list_item_text_size2" />
     </LinearLayout>
 
 </LinearLayout>
