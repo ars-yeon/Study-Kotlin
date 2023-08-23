@@ -9,7 +9,7 @@
         android:layout_width="@dimen/icon_size"
         android:layout_height="@dimen/icon_size"
         android:layout_gravity="center_vertical"
-        android:layout_marginHorizontal="10dp"
+        android:layout_weight="1"
         android:padding="@dimen/icon_padding"
         android:scaleType="centerCrop"
         android:src="@drawable/sample_0" />
