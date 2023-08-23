@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/name"
             android:padding="@dimen/list_item_padding"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/black"
             android:textSize="@dimen/list_item_text_size1"
             tools:ignore="SpUsage" />
 
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/age"
             android:padding="@dimen/list_item_padding"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/gray"
             android:textSize="@dimen/list_item_text_size2"
             tools:ignore="SpUsage" />
     </LinearLayout>
