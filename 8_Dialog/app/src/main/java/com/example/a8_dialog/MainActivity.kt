@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             val builder = AlertDialog.Builder(this)
             builder.setTitle("기본 다이얼로그 타이틀")
             builder.setMessage("기본 다이얼로그 메시지")
-            builder.setIcon(R.mipmap.ic_launcher)
+            builder.setIcon(R.mipmap.ic_blue_heart)
 
             // 버튼 클릭시에 무슨 작업을 할 것인가!
             val listener = object: DialogInterface.OnClickListener {
