@@ -1,6 +1,7 @@
 package com.example.a8_dialog
 
 import android.app.DatePickerDialog
+import android.app.TimePickerDialog
 import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -80,6 +81,20 @@ class MainActivity : AppCompatActivity() {
                 binding.tvTitle.text = "${i}년 ${i2 + 1}월 ${i3}일"
             }
             val picker = DatePickerDialog(this, listener, year, month, day)
+            picker.show()
+        }
+
+        // 4. 시간 다이얼로그
+        binding.btn4Time.setOnClickListener {
+            val calendar = Calendar.getInstance()
+            val hour = calendar.get(Calendar.HOUR)
+            val minute = calendar.get(Calendar.MINUTE)
+
+            val listener = TimePickerDialog.OnTimeSetListener { timePicker, i, i2 ->
+                // i시 i2분
+                binding.tvTitle.text = "${i}시 ${i2}분"
+            }
+            val picker = TimePickerDialog(this, listener, hour, minute, false)
             picker.show()
         }
     }
