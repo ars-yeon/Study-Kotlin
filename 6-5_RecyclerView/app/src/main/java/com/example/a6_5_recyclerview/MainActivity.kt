@@ -2,7 +2,9 @@ package com.example.a6_5_recyclerview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.a6_5_recyclerview.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -25,13 +27,17 @@ class MainActivity : AppCompatActivity() {
         dataList.add(MyItem(R.drawable.sample_6, "CAMPING", "7"))
         dataList.add(MyItem(R.drawable.sample_7, "POCHACCO", "8"))
 
-        // 어댑터 생성 및 연결
-        binding.listView.adapter = MyAdapter(this, dataList)
+        binding.recyclerView.adapter = MyAdapter(dataList)
 
-        // 항목 클릭 이벤트 처리
-        binding.listView.setOnItemClickListener { parent, view, position, id ->
-            val name: String = (binding.listView.adapter.getItem(position) as MyItem).aName
-            Toast.makeText(this, " $name 선택!", Toast.LENGTH_SHORT).show()
+        val adapter = MyAdapter(dataList)
+        binding.recyclerView.adapter = adapter
+        binding.recyclerView.layoutManager = LinearLayoutManager(this)
+
+        adapter.itemClick = object : MyAdapter.ItemClick {
+            override fun onClick(view: View, position: Int) {
+                val name: String = dataList[position].aName
+                Toast.makeText(this@MainActivity," $name 선택!", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }
