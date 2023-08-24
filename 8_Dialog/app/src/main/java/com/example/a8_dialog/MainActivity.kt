@@ -1,11 +1,13 @@
 package com.example.a8_dialog
 
+import android.app.DatePickerDialog
 import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
 import com.example.a8_dialog.databinding.ActivityMainBinding
+import java.util.Calendar
 
 class MainActivity : AppCompatActivity() {
 
@@ -64,6 +66,21 @@ class MainActivity : AppCompatActivity() {
             builder.setNegativeButton("취소", null)
 
             builder.show()
+        }
+
+        // 3. 날짜 다이얼로그
+        binding.btn3Date.setOnClickListener {
+            val calendar = Calendar.getInstance() // 오늘 날짜 불러오기
+            val year = calendar.get(Calendar.YEAR)
+            val month = calendar.get(Calendar.MONTH)
+            val day = calendar.get(Calendar.DAY_OF_MONTH)
+            
+            val listener = DatePickerDialog.OnDateSetListener { datePicker, i, i2, i3 ->
+                // i년 i2월 i3일
+                binding.tvTitle.text = "${i}년 ${i2 + 1}월 ${i3}일"
+            }
+            val picker = DatePickerDialog(this, listener, year, month, day)
+            picker.show()
         }
     }
 }
