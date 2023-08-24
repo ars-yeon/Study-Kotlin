@@ -97,5 +97,17 @@ class MainActivity : AppCompatActivity() {
             val picker = TimePickerDialog(this, listener, hour, minute, false)
             picker.show()
         }
+
+        // 5. 진행 다이얼로그
+        binding.btn5Progress.setOnClickListener {
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("프로그래스바")
+            builder.setIcon(R.mipmap.ic_blue_heart)
+
+            val v1 = layoutInflater.inflate(R.layout.progressbar, null)
+            builder.setView(v1)
+
+            builder.show()
+        }
     }
 }
