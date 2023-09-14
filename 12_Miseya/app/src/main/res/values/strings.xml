@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">12_Miseya</string>
+    <string name="density_unit">- ㎍/㎥</string>
+    <string name="hint_select_city">도시를 선택해 주세요.</string>
 </resources>
